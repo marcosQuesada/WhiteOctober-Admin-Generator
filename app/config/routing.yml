@@ -1,0 +1,15 @@
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
+_white_october_admin:
+    resource: .
+    type: white_october_admin
+
+white_october_admin:
+    resource: "@WhiteOctoberAdminBundle/Resources/config/routing/admin.xml"
+    
+BaseTestBundle:
+    resource: "@BaseTestBundle/Resources/config/routing.yml"
+    prefix:   /    

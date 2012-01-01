@@ -1,0 +1,30 @@
+product:
+    pattern:  /
+    defaults: { _controller: "BaseTestBundle:Product:index" }
+
+product_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BaseTestBundle:Product:show" }
+
+product_new:
+    pattern:  /new
+    defaults: { _controller: "BaseTestBundle:Product:new" }
+
+product_create:
+    pattern:  /create
+    defaults: { _controller: "BaseTestBundle:Product:create" }
+    requirements: { _method: post }
+
+product_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BaseTestBundle:Product:edit" }
+
+product_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BaseTestBundle:Product:update" }
+    requirements: { _method: post }
+
+product_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BaseTestBundle:Product:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,30 @@
+category:
+    pattern:  /
+    defaults: { _controller: "BaseTestBundle:Category:index" }
+
+category_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BaseTestBundle:Category:show" }
+
+category_new:
+    pattern:  /new
+    defaults: { _controller: "BaseTestBundle:Category:new" }
+
+category_create:
+    pattern:  /create
+    defaults: { _controller: "BaseTestBundle:Category:create" }
+    requirements: { _method: post }
+
+category_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BaseTestBundle:Category:edit" }
+
+category_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BaseTestBundle:Category:update" }
+    requirements: { _method: post }
+
+category_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BaseTestBundle:Category:delete" }
+    requirements: { _method: post }

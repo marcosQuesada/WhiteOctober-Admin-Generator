@@ -1,0 +1,11 @@
+BaseTestBundle_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: BaseTestBundle:Default:index }
+
+Category_crud:
+    resource: "@BaseTestBundle/Resources/config/routing/category.yml"
+    prefix:   /category
+    
+Product_crud:
+    resource: "@BaseTestBundle/Resources/config/routing/product.yml"
+    prefix:   /product    
